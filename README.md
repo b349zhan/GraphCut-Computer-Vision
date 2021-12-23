@@ -1,1 +1,1 @@
-# GraphCut-Computer-Vision-
+# GraphCut Computer Vision
