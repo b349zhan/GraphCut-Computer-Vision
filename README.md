@@ -8,8 +8,21 @@ In the algorithm, we have source (s) and sink(t) and a set of non-terminal nodes
 
 <img width="449" alt="Screen Shot 2021-12-28 at 11 14 52 AM" src="https://user-images.githubusercontent.com/54965707/147585592-874703ef-f450-4e8f-b64b-1e1b6a8b0385.png">
 
+In the algorithms, we have t-links(links between non-terminal node and terminal node) and n-links (links between non-terminal nodes).
 
+T-links describe individual likelihoods for segment labels (s and t). For the weights of t-links, we set it to be w_ps = D_p(t) = -ln Pr(I_p|theta_1) and w_ps = D_p(t) = -ln Pr(I_p|theta_0), representing the penalties/costs (negative log-likelihoods) for assigning label s or t to pixel p.
 
+N-links enforce structured segmentation incorporating pixels dependencies/correlations. In this case, we only consider the pixels p, q such that their corresponding pixel beliefs are different (for example, we belive p is from background, and q is from object). Then, we add a corresponding weight to it, where weight of edge pq is defined as w_pq = lambda * exp{- || Ip - Iq||^2 / (2 * sigma^2)}.
+
+Hence, we can define the objective function to be the sum of weights of N-links and t-links defined above.
+
+In our case, we used interactive seed implementation to assist us in developing GMM to calculate the corresponding weights. When performing the optimization, we convert the minimum-cut problem into maximum flow problem. 
+
+The below is the demonstration of the implementation results:
+
+Original Picture:
+
+![spidy](https://user-images.githubusercontent.com/54965707/147587808-0af0d405-902c-478d-a88b-29290550e2cc.jpeg)
 ![Screen Shot 2021-12-28 at 11 07 31 AM](https://user-images.githubusercontent.com/54965707/147585569-7b6e2e17-1ff4-43dd-9555-5b8ee3e538f5.png)
 ![Screen Shot 2021-12-28 at 11 07 40 AM](https://user-images.githubusercontent.com/54965707/147585579-96c29e5d-6d4a-47fe-9427-44de1fa6ae39.png)
 ![Screen Shot 2021-12-28 at 11 07 47 AM](https://user-images.githubusercontent.com/54965707/147585583-ac65a475-28e3-422a-b813-72b2f35c0375.png)
