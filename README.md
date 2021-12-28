@@ -22,8 +22,7 @@ The below is the demonstration of the implementation results:
 
 Original Picture:
 
-![joker](https://user-images.githubusercontent.com/54965707/147587857-85253080-7bff-4d8a-8415-c459260a6630.jpg)
-![Screen Shot 2021-12-28 at 11 07 31 AM](https://user-images.githubusercontent.com/54965707/147585569-7b6e2e17-1ff4-43dd-9555-5b8ee3e538f5.png)
+![joker](https://user-images.githubusercontent.com/54965707/147587857-85253080-7bff-4d8a-8415-c459260a6630.jpg)![Screen Shot 2021-12-28 at 11 07 31 AM](https://user-images.githubusercontent.com/54965707/147585569-7b6e2e17-1ff4-43dd-9555-5b8ee3e538f5.png)
 
 ![spidy](https://user-images.githubusercontent.com/54965707/147587808-0af0d405-902c-478d-a88b-29290550e2cc.jpeg)
 ![Screen Shot 2021-12-28 at 11 07 40 AM](https://user-images.githubusercontent.com/54965707/147585579-96c29e5d-6d4a-47fe-9427-44de1fa6ae39.png)
