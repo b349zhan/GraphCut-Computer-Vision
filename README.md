@@ -20,8 +20,20 @@ In our case, we used interactive seed implementation to assist us in developing 
 
 The below is the demonstration of the implementation results:
 
-Original Picture:
+Original Joker picture vs Resulting Joker picture with sigma = 0.05, lambda = 20:
 <p align="center">
-  <img src="/results/joker.jpg" width="350" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+  <img src="imgs/joker.jpg" width="350" title="Original Joker">
+  <img src="results/joker.png" width="350" title="Resulting Joker">
+</p>
+
+Original Spiderman(Tobey Maguire Version) picture vs Resulting Spiderman picture with sigma = 0.05, lambda = 100:
+<p align="center">
+  <img src="imgs/spidy.jpg" width="350" title="Original Joker">
+  <img src="results/spidy.png" width="350" title="Resulting Joker">
+</p>
+
+Original lama Picture vs Resulting lamma picture with sigma = 100, lambda = 5*10^8:
+<p align="center">
+  <img src="imgs/lama.jpeg" width="350" title="Original Joker">
+  <img src="results/lama.png" width="350" title="Resulting Joker">
 </p>
