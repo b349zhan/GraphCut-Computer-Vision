@@ -21,3 +21,7 @@ In our case, we used interactive seed implementation to assist us in developing 
 The below is the demonstration of the implementation results:
 
 Original Picture:
+<p align="center">
+  <img src="/results/joker.jpg" width="350" title="hover text">
+  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+</p>
